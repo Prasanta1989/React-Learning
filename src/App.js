@@ -9,14 +9,23 @@ import Functionclick from "./component/Functionclick"
 import ClassClick from "./component/ClassClick"
 import EventBind from './component/eventBind'
 import ParentComponent from "./component/ParentComponent"
+import UserGreeting from "./component/UserGreeting"
+import Namelist from "./component/Namelist"
+import Customestyle from "./component/Customestyle"
+
+import Inline from "./component/Inline"
 
 function App() {
   return (
     <div className="App">
+      <Inline />
+      <Customestyle primary={true}/>
+      <UserGreeting></UserGreeting><br/>
+      <Namelist></Namelist><br/>
       <ParentComponent /><br/>
-      <EventBind></EventBind>
-      <ClassClick></ClassClick>
-      <Functionclick></Functionclick>
+      <EventBind></EventBind><br/>
+      <ClassClick></ClassClick><br/>
+      <Functionclick></Functionclick><br/>
       {/* <Counter></Counter> */}
       {/* <Greet name="Prasanta">
         <p>My child tag</p>
