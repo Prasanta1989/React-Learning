@@ -12,12 +12,15 @@ import ParentComponent from "./component/ParentComponent"
 import UserGreeting from "./component/UserGreeting"
 import Namelist from "./component/Namelist"
 import Customestyle from "./component/Customestyle"
-
+import Form from "./component/Form"
 import Inline from "./component/Inline"
+import LifecycleA from "./component/LifecycleA"
 
 function App() {
   return (
     <div className="App">
+      <LifecycleA />
+      <Form />
       <Inline />
       <Customestyle primary={true}/>
       <UserGreeting></UserGreeting><br/>
