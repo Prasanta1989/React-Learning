@@ -18,10 +18,17 @@ import LifecycleA from "./component/LifecycleA"
 import FragmentDemo from "./component/FragmentDemo"
 import Table from "./component/Table"
 import ParentComp from "./component/ParentComp"
-
+import RefsDemo from "./component/RefsDemo"
+import FocusInput from "./component/FocusInput"
+import ParentFRInput from "./component/ParentFRInput"
+import Portal from "./component/Portal"
 function App() {
   return (
     <div className="App">
+      <Portal />
+      <ParentFRInput />
+      <FocusInput />
+      <RefsDemo />
       <ParentComp />
       <Table />
       <FragmentDemo />

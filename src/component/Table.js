@@ -4,7 +4,9 @@ import Column from './Column'
 function Table() {
     return (
         <table>
+            <tbody>
                 <Column />
+            </tbody>
         </table>
     )
 }
