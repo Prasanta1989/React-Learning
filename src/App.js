@@ -22,9 +22,29 @@ import RefsDemo from "./component/RefsDemo"
 import FocusInput from "./component/FocusInput"
 import ParentFRInput from "./component/ParentFRInput"
 import Portal from "./component/Portal"
+import Hero from "./component/Hero"
+import ErrorBoundary from "./component/ErrorBoundary"
+import ClickCounter from "./component/ClickCounter"
+import HoverCounter from "./component/HoverCounter"
+
+
 function App() {
   return (
     <div className="App">
+      <HoverCounter />
+      <ClickCounter />
+      {/* <ErrorBoundary>
+        <Hero heroName="Prasanta" />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName="Biku" />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <Hero heroName= "Joker" />
+      </ErrorBoundary> */}
+
       <Portal />
       <ParentFRInput />
       <FocusInput />
