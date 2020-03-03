@@ -26,11 +26,16 @@ import Hero from "./component/Hero"
 import ErrorBoundary from "./component/ErrorBoundary"
 import ClickCounter from "./component/ClickCounter"
 import HoverCounter from "./component/HoverCounter"
-
+import ClickCounterTwo from "./component/ClickCounterTwo"
+import HoverCounterTwo from "./component/HoverCounterTwo"
+import RenderPropsTwo from "./component/RenderPropsTwo"
 
 function App() {
   return (
     <div className="App">
+      <RenderPropsTwo name = {() => "RenderPropsTwo"} />
+      <HoverCounterTwo />
+      <ClickCounterTwo />
       <HoverCounter />
       <ClickCounter />
       {/* <ErrorBoundary>
